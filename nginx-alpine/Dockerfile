@@ -3,7 +3,7 @@ FROM nginx:alpine
 MAINTAINER Damian Brosnahan
 
 # add ssl support to container
-# RUN apk --no-cache add openssl
+RUN apk --no-cache add openssl
 
 # ensure local python is preferred over distribution python
 ENV PATH /usr/local/bin:$PATH
